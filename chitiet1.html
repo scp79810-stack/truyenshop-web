@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web bán hàng</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+  <style>
+    .category-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <div class="d-flex container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/images/1.jfif" alt="" height="100"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i>Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Sản phẩm
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Tìm sản phẩm" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i>Tìm kiếm</button>
+          </form>
+          <a href="#" class="btn btn-warning position-relative">
+            <i class="bi bi-cart3"></i> Giỏ hàng
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              3
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <center>
+        <div class="carousel-item active">
+          <img src="assets/images/2.webp" height="800" width="600" class="d-block w-50" alt="...">
+        </div>
+      </center>
+      <center>
+        <div class="carousel-item">
+          <img src="assets/images/1.webp" height="780" width="680" class="d-block w-50" alt="...">
+        </div>
+      </center>
+      <center>
+        <div class="carousel-item">
+          <img src="assets/images/5.webp" height="800" width="600" class="d-block w-50" alt="...">
+        </div>
+      </center>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container mt-4">
+  </div>
+  
+
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 bg-white p-4 rounded-4 shadow-sm">
+        <div class="row g-5">
+          
+          <div class="col-12 col-md-5">
+            <div class="position-relative border rounded-4 p-3 bg-light text-center">
+              <span class="badge bg-danger position-absolute top-0 start-0 m-3 fs-6 px-3 py-2 rounded-pill shadow-sm">Mới</span>
+              
+              <img src="assets/images/9.webp" class="img-fluid rounded-3 my-4" alt="Lời Nguyền Chân Ái" style="max-height: 400px; object-fit: contain;">
+            </div>
+            
+            <div class="row g-2 mt-3 justify-content-center">
+              <div class="col-3">
+                <div class="border rounded-3 p-1 bg-white text-center border-warning">
+                  <img src="assets/images/9.webp" class="img-fluid" alt="Bìa trước" style="height: 60px; object-fit: contain;">
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="border rounded-3 p-1 bg-white text-center opacity-75">
+                  <img src="assets/images/9.webp" class="img-fluid" alt="Bìa sau" style="height: 60px; object-fit: contain; filter: hue-rotate(90deg);">
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-md-7 d-flex flex-column">
+            
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-2 small">
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted">Tiểu thuyết</a></li>
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-muted">Fantasy Kỳ Ảo</a></li>
+              </ol>
+            </nav>
+            
+            <h1 class="fw-bold text-dark h2 mb-2">Lời Nguyền Chân Ái (Tái Bản 2026)</h1>
+            <p class="text-muted small mb-3">Phần cuối của bộ truyện fantasy đình đám sau <em>“Ngày xửa ngày xưa có một trái tim vụn vỡ”</em> và <em>“Vũ khúc đoạn tình”</em>.</p>
+            
+            <div class="d-flex align-items-center mb-4">
+              <div class="text-warning me-2 fs-6">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="text-muted small border-start ps-2 me-3">5.0 (128 đánh giá)</span>
+              <span class="text-muted small border-start ps-2">Đã bán 542</span>
+            </div>
+      
+            <div class="p-3 bg-light rounded-4 mb-4">
+              <div class="d-flex align-items-baseline gap-3">
+                <span class="text-danger fw-bold fs-2">161.100 đ</span>
+                <span class="text-muted text-decoration-line-through fs-5">179.000 đ</span>
+                <span class="badge bg-danger-subtle text-danger fw-semibold px-2 py-1 rounded">-10%</span>
+              </div>
+            </div>
+      
+            <div class="mb-4">
+              <h6 class="fw-bold text-dark mb-2"><i class="bi bi-trophy-fill text-warning me-2"></i>Thành tích ấn tượng toàn cầu:</h6>
+              <ul class="list-unstyled small text-secondary ps-3">
+                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2 small"></i><strong>#1 New York Times Bestseller</strong></li>
+                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2 small"></i>#5 BXH Tiểu thuyết giả tưởng đen tối cho thanh thiếu niên trên Amazon</li>
+                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2 small"></i>#8 BXH Sách lãng mạn huyền bí dành cho thanh thiếu niên trên Amazon</li>
+                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2 small"></i>Top đề cử Sách kỳ ảo, giả tưởng dành cho thanh thiếu niên trên Goodreads</li>
+              </ul>
+            </div>
+      
+            <div class="mb-4">
+              <h5 class="fw-bold text-dark border-bottom pb-2 mb-3">Thông tin chi tiết</h5>
+              <div class="row g-2 small">
+                <div class="col-4 text-muted">Thể loại:</div>
+                <div class="col-8 fw-semibold text-dark">Tiểu thuyết lãng mạn kỳ ảo (Fantasy)</div>
+                
+                <div class="col-4 text-muted">Nhà xuất bản:</div>
+                <div class="col-8 text-dark">NXB Văn Học</div>
+                
+                <div class="col-4 text-muted">Năm xuất bản:</div>
+                <div class="col-8 text-dark">2026</div>
+                
+                <div class="col-4 text-muted">Hình thức bìa:</div>
+                <div class="col-8 text-dark">Bìa Mềm (Có tay gấp)</div>
+              </div>
+            </div>
+      
+            <div class="card border-warning-subtle bg-warning-subtle mb-4 rounded-3">
+              <div class="card-body py-2 px-3 text-dark small">
+                <i class="bi bi-gift-fill text-warning me-2"></i>
+                <strong>Quà tặng độc quyền:</strong> Tặng kèm 01 Bookmark thiết kế kim tuyến đặc biệt (Số lượng có hạn).
+              </div>
+            </div>
+      
+            <div class="mt-auto pt-3 border-top">
+              <div class="d-flex flex-wrap align-items-center gap-3">
+                
+                <div class="d-flex align-items-center border rounded-pill bg-white p-1" style="max-width: 130px;">
+                  <button class="btn btn-sm btn-link text-dark text-decoration-none px-2 py-1" onclick="this.parentNode.querySelector('input[type=number]').stepDown()"><i class="bi bi-dash-lg"></i></button>
+                  <input class="form-control form-control-sm border-0 text-center fw-bold p-0 shadow-none" min="1" name="quantity" value="1" type="number" style="width: 40px;">
+                  <button class="btn btn-sm btn-link text-dark text-decoration-none px-2 py-1" onclick="this.parentNode.querySelector('input[type=number]').stepUp()"><i class="bi bi-plus-lg"></i></button>
+                </div>
+                
+                <div class="d-flex gap-2 flex-grow-1">
+                  <button class="btn btn-outline-warning text-dark px-4 py-2 rounded-pill fw-semibold flex-grow-1">
+                    <i class="bi bi-cart-plus me-2"></i>Thêm vào giỏ
+                  </button>
+                  <button class="btn btn-warning text-dark px-4 py-2 rounded-pill fw-bold flex-grow-1">
+                    Mua ngay
+                  </button>
+                </div>
+                
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      
+        <div class="mt-5 pt-4 border-top">
+          <h4 class="fw-bold text-dark mb-3">Mô tả sản phẩm</h4>
+          <div class="text-secondary lh-lg small">
+            <p class="fw-semibold text-dark fs-5">“Lời nguyền chân ái” – Phần kết hoành tráng của hành trình định mệnh</p>
+            
+            <p>Bộ 3 tiểu thuyết lãng mạn kỳ ảo <strong>“Ngày xửa ngày xưa có một trái tim vụn vỡ”</strong> xuất bản lần đầu vào tháng 9/2021 tại Mỹ. Tính đến đầu năm 2024, tác phẩm đã được chuyển ngữ sang gần 30 thứ tiếng và có hơn 70 phiên bản khác nhau được phát hành trên toàn thế giới cùng loạt thành tích cực khủng trên các bảng xếp hạng quốc tế.</p>
+            
+            <p>Bạn mong chờ cái kết nào cho câu chuyện lãng mạn giữa hoàng tử trái tim Jacks và nàng cáo Evangeline Fox? Hãy khám phá ngay câu trả lời trong tác phẩm cuối cùng này.</p>
+            
+            <hr class="my-4">
+            
+            <p class="text-danger fw-bold text-center fs-6 tracking-wide">HAI KẺ THÙ, MỘT CÔ GÁI & TRẬN CHIẾN SINH TỬ ĐỂ GIÀNH GIẬT HẠNH PHÚC VĨNH HẲNG!</p>
+            
+            <p>Evangeline Fox đã mạo hiểm đến phương Bắc hoa lệ để tìm kiếm cái kết hạnh phúc cho mình và dường như nàng đã có được nó. Nàng kết hôn với hoàng tử hào hoa và sống trong một lâu đài tráng lệ. Nhưng Evangeline chẳng hề ý thức được cái giá tàn khốc mà nàng phải trả cho câu chuyện cổ tích ấy.</p>
+            
+            <p>Nàng có linh cảm mình đã đánh mất thứ gì đó rất quan trọng. Còn chồng nàng thì khăng khăng rằng nàng không đánh mất gì cả và điều quan trọng nhất bây giờ là phải giết Jacks.</p>
+            
+            <p class="fst-italic">Máu sẽ đổ và trái tim sẽ bị đánh cắp, tình yêu đích thực sẽ phải vượt qua những thử thách nào trong câu chuyện này…</p>
+          </div>
+        </div>
+      </div>
+      <footer class="text-black pt-5 pb-3 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <h4 class="fw-bold text-warning mb-3"><img src="assets/images/1.jfif" alt="" width="75"></h4>
+              <p class="text-secondary small">
+                Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM <br>
+                60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam
+              </p>
+            </div>
+
+            <div class="col-md-2 mb-4">
+              <h5 class="fw-bold mb-3">Dịch vụ</h5>
+              <ul class="list-unstyled small">
+                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Hệ thống nhà sách</a></li>
+                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Chính sách bảo mật</a></li>
+                <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Điều khoản sử dụng</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 mb-4 text-secondary small">
+              <h5 class="fw-bold text-black mb-3">Liên hệ</h5>
+              <p><i class="fas fa-map-marker-alt text-warning me-2"></i> Quận 8, TP. Hồ Chí Minh</p>
+              <p><i class="fas fa-envelope text-warning me-2"></i>thanhkibito1803@gmail.com</p>
+              <p><i class="fas fa-phone text-warning me-2"></i>0565090146</p>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <h5 class="fw-bold mb-3">Theo dõi ngay</h5>
+              <div class="fs-4">
+                <a href="#" class="text-black me-3 opacity-75 footer-icon"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-black me-3 opacity-75 footer-icon"><i class="bi bi-youtube"></i></a>
+                  <a href="#" class="text-black me-3 opacity-75 footer-icon"><i class="bi bi-discord"></i></a>
+                  <a href="#" class="text-black opacity-75 footer-icon"><i class="bi bi-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+          <hr class="border-secondary">
+          <div class="text-center text-secondary mt-3">
+            <small>&copy; 2026 <strong>Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 20/12/2005, đăng ký thay đổi lần thứ 10, ngày 20/05/2022.</strong></small>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
